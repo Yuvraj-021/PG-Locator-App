@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/companydefault"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Pg Details"
+                        android:layout_marginBottom="20dp" />
+
+                    <RelativeLayout style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/companynameimg"
+                            android:src="@drawable/hostel"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:id="@+id/nameTextView"
+                            style="@style/profileDetailsTextMain"
+                            android:layout_toRightOf="@id/companynameimg"
+                            android:text="PG Name" />
+
+                        <TextView
+                            android:id="@+id/pgname_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/companynameimg"
+                            android:text="abc" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/Address"
+                            android:src="@drawable/address"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Address"
+                            android:layout_toRightOf="@id/Address"
+                            style="@style/profileDetailsTextMain"/>
+
+                        <TextView
+                            android:id="@+id/address_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/Address"
+                            android:text="Address Here" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/jobdescriptionimageview"
+                            android:src="@drawable/description"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Job Description"
+                            android:layout_toRightOf="@id/jobdescriptionimageview"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/description_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/jobdescriptionimageview"
+                            android:text="Hello This is our PG" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/mobileno_img"
+                            android:src="@drawable/mobileno"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Mobile No"
+                            android:layout_toRightOf="@id/mobileno_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/mobileno_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/mobileno_img"
+                            android:text="Your Mobile Number" />
+
+                    </RelativeLayout>
+
+
+
+                    <View style="@style/proifleDetailsView" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlabout"
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/bhksize_img"
+                            android:src="@drawable/bhk"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="bhk"
+                            android:layout_toRightOf="@id/bhksize_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/bhk_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/bhksize_img"
+                            android:text="Your Flat Bhk Size" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        android:id="@+id/rlogout"
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/noofbeds_img"
+                            android:src="@drawable/beds"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="No Of Beds"
+                            android:layout_toRightOf="@id/noofbeds_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/noofbeds_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/noofbeds_img"
+                            android:text="your no of beds" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/boysgirl_img"
+                            android:src="@drawable/boygirl"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Boy / Girl"
+                            android:layout_toRightOf="@id/boysgirl_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/boysgirl_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/boysgirl_img"
+                            android:text="Boy / Girl" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/ac_img"
+                            android:src="@drawable/ac"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Ac"
+                            android:layout_toRightOf="@id/ac_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/ac_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/ac_img"
+                            android:text="ac" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/gym_img"
+                            android:src="@drawable/gym"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Gym"
+                            android:layout_toRightOf="@id/gym_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/gym_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/gym_img"
+                            android:text="gym" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/food_img"
+                            android:src="@drawable/food"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Food"
+                            android:layout_toRightOf="@id/food_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/food_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/food_img"
+                            android:text="food" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/furnofur_img"
+                            android:src="@drawable/beds"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Furniture"
+                            android:layout_toRightOf="@id/furnofur_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/furnofur_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/furnofur_img"
+                            android:text="furniture here" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/rentimg"
+                            android:src="@drawable/rent"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Rent"
+                            android:layout_toRightOf="@id/rentimg"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/rent_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/rentimg"
+                            android:text="rent" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <RelativeLayout
+                        style="@style/profileDetailsLayout">
+                        <ImageView
+                            android:id="@+id/deposit_img"
+                            android:src="@drawable/deposit"
+                            style="@style/profileDetailsImage" />
+
+                        <TextView
+                            android:text="Deposit"
+                            android:layout_toRightOf="@id/deposit_img"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/deposit_view"
+                            style="@style/profileDetailsMiniText"
+                            android:layout_toRightOf="@id/deposit_img"
+                            android:text="Amount here" />
+
+                    </RelativeLayout>
+                    <View style="@style/proifleDetailsView" />
+                    <View style="@style/proifleDetailsView" />
+                    <View style="@style/proifleDetailsView" />
+                    <View style="@style/proifleDetailsView" />
+                    <View style="@style/proifleDetailsView" />
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

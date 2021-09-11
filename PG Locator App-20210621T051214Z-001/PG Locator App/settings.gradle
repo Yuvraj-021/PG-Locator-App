@@ -1,0 +1,2 @@
+rootProject.name = "PG Locator"
+include ':app'

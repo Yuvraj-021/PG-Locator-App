@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PG Locator</string>
+    <string name="title_home">Nearby PGs</string>
+    <string name="title_dashboard">My PGs</string>
+    <string name="title_notifications">Profile</string>
+    <string name="title_activity_login2">PG Locator</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="input_error_name">name required</string>
+    <string name="input_error_address">Adress required</string>
+    <string name="input_error_Occupation">Occupation required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_correct_password">Correct password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registeration_act">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/reg_nametxt"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Name"
+
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_emailtext"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Email"
+
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_mobtext"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Mobile number"
+
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_pgnametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="PG Name"
+
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_addresstext"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Address"
+
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_passtext"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Password"
+            android:inputType="textPassword|textWebPassword"
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_cpasstext"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Confirm Password"
+            android:inputType="textPassword|textWebPassword"
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="56dp"
+        app:backgroundTint="@color/Arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_128" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="184dp"
+
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_vertical"
+        android:text="Sign up "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Register"
+        android:textColor="@color/purple_500"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="PG Locator"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="25dp"
+        android:layout_height="420dp"
+        android:background="@color/purple_500"
+        android:text="         "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

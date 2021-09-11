@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add PG"
+        android:textColor="@color/colorHeading"
+        android:textSize="34sp"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="922dp">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="General Details"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/pgname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="PG Name"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pgdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="PG description"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pgaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="PG address"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/pgcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="PG Contact"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="PG Details"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="Upload Photo" />
+
+            <EditText
+                android:id="@+id/bhk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="bhk size"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/noofbeds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="no. of beds"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/boysorgirls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="boys/girls/both"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/acnonac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+                            <RadioButton
+                                android:id="@+id/rbac"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="AC Room" />
+
+                            <RadioButton
+                                android:id="@+id/rbnac"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="NON AC Room" />
+<!--                        </LinearLayout>-->
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/gymnogym"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+                            <RadioButton
+                                android:id="@+id/rbgym"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="Gym" />
+
+                            <RadioButton
+                                android:id="@+id/rbngym"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="No Gym" />
+<!--                        </LinearLayout>-->
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/foodnofood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+                            <RadioButton
+                                android:id="@+id/rbfood"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="Food" />
+
+                            <RadioButton
+                                android:id="@+id/rbnfood"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="No Food" />
+<!--                        </LinearLayout>-->
+
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/furnofur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+                            <RadioButton
+                                android:id="@+id/rbfur"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="Furniture" />
+
+                            <RadioButton
+                                android:id="@+id/rbnfur"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="No Furniture" />
+<!--                        </LinearLayout>-->
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Charges"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeading"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/montlyrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="monthly rent"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded"
+                android:elevation="5dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="deposit"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dd.pglocator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/building"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PGLocator">
+        <activity android:name=".searchadapter"></activity>
+        <activity android:name=".nearbyScreen.SearchActivity" />
+        <activity android:name=".dashboard_adapter" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".nearbyScreen.PgBookingActivity" />
+        <activity android:name=".nearbyScreen.PgdetailsActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.PGLocator.NoActionBar" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2"
+            android:theme="@style/Theme.PGLocator.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PGLocator.NoActionBar" />
+    </application>
+
+</manifest>
